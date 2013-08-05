@@ -18,7 +18,7 @@ to start playing with...</b>
 
 <h3><u>Donate with BitCoin!</u></h3>
 A friend of mine has already bugged me, to charge for the code... I can't or won't. I will however as always offer my
-BitCoin address for anyone who'd like to donate to keep my doggy happy & me filled with Coffee.
+BitCoin address for anyone who'd like to donate, donations will go to Opportunity Village(http://www.opportunityvillage.org).
 
 <b>BitCoin Address: 16b3QAFmjrh4yzHjLw7jAKG5AnV8WVXdCK</b>
 
@@ -65,6 +65,11 @@ Select apache 2 >> Press OK
 
 Want to know more about Gnash + Flash? I have a video on YouTube.com/TechMeShow
 
+6). Remote Mouse Control
+> sudo apt-get synergy
+
+Windows (64/32), Mac OSX, & Linux Clients at: http://synergy-foss.org
+
 -------------------------------------------------------------------------------------
 
 **** TEST HTTPD + PHP ****
@@ -92,10 +97,15 @@ your settings or ensure you're not blocking Port 80 or ensure that's the correct
 **** SETUP DATABASE ****
 
 1). Create new MySQL User + Password
+> CREATE USER 'picast'@'localhost' IDENTIFIED BY 'piCAST1337';
 
 2). Create new Database (e.g. picast)
+> CREATE DATABASE picast;
 
 3). Add User to new Database w/FULL Privledges
+> GRANT ALL PRIVILEGES ON picast . Items TO 'picast'@'localhost';
+
+> FLUSH PRIVLEGES;
 
 **** PHPMYADMIN ****
 
